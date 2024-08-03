@@ -25,7 +25,7 @@ This Old School RuneScape plugin displays cooldowns on food and drink items in y
 
 ## Screenshots
 
-![Plugin Screenshot](screenshot.png)
+![Plugin Screenshot](media/PluginDemo.gif)
 
 ## GIF Demo
 
