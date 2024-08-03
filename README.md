@@ -1,6 +1,6 @@
 # Consumable Cooldowns Plugin
 
-This Old School RuneScape plugin displays cooldowns on food and drink items in your inventory. It is inspired by Copy Pasta's RuneLite plugin.
+This Old School RuneScape script demonstrates cooldowns on food and drink items in your inventory. It is inspired by Copy Pasta's plugin on RuneLite.
 
 ## Features
 
