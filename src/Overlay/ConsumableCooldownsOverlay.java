@@ -9,8 +9,6 @@ import org.dreambot.api.wrappers.items.Item;
 import java.awt.*;
 import java.util.Map;
 
-import static org.dreambot.api.utilities.Logger.log;
-
 public class ConsumableCooldownsOverlay implements PaintListener {
     private final Map<ConsumableItemType, Integer> itemCooldowns;
 
@@ -39,12 +37,14 @@ public class ConsumableCooldownsOverlay implements PaintListener {
         g2d.setComposite(originalComposite);
     }
 
+
     private void drawCooldownOverlay(Graphics2D g2d, Item item, int cooldown) {
         Rectangle boundingBox = item.getDestination().getBoundingBox();
 
-        int size = Math.min(boundingBox.width, boundingBox.height) - 5;
-        int x = boundingBox.x + (boundingBox.width - size) / 2;
-        int y = boundingBox.y + (boundingBox.height - size) / 2;
+        // Increase the size slightly and adjust the y-coordinate
+        int size = Math.min(boundingBox.width, boundingBox.height) ;
+        int x = boundingBox.x + (boundingBox.width - size) ;
+        int y = boundingBox.y + (boundingBox.height - size) ;
 
         g2d.setColor(new Color(0, 0, 0, 128));
         g2d.fillRect(x, y, size, size);
